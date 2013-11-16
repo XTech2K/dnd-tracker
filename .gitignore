@@ -16,4 +16,6 @@ capybara-*.html
 rerun.txt
 pickle-email-*.html
 .project
-config/initializers/secret_token.rb
+
+# ENV based now - set ENV['SECRET_TOKEN'] in production env
+# config/initializers/secret_token.rb
