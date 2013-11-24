@@ -18,8 +18,10 @@ test:
   pool: 5
   timeout: 5000
 
+# production is managed automatically by heroku and uses postgres
 production:
-  adapter: sqlite3
-  database: db/production.sqlite3
-  pool: 5
-  timeout: 5000
+#   adapter: postgresql
+#   database: dnd_tracker_production
+#   pool: 5
+#   timeout: 5000
+  
