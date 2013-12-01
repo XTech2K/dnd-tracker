@@ -69,6 +69,47 @@ class CharactersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def character_params
-      params.require(:character).permit(:name, :level, :race, :cclass)
+      params.require(:character).permit(
+        :player_name, 
+        :name, 
+        :level, 
+        :race, 
+        :cclass, 
+        :max_hit_points,
+        :surge_value,
+        :surges_per_day,
+        :initiative,
+        :armor_class,
+        :fortitude,
+        :reflex,
+        :will,
+        :speed,
+        :strength,
+        :constitution,
+        :dexterity,
+        :intelligence,
+        :wisdom,
+        :charisma,
+        :acrobatics,
+        :arcana,
+        :athletics,
+        :bluff,
+        :diplomacy,
+        :dungeoneering,
+        :endurance,
+        :heal,
+        :history,
+        :insight,
+        :intimidate,
+        :nature,
+        :perception,
+        :religion,
+        :stealth,
+        :streetwise,
+        :thievery,
+        :hit_points,
+        :remaining_surges,
+        :action_points,
+        :temp_hit_points)
     end
 end
