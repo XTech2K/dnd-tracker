@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131116150444) do
+ActiveRecord::Schema.define(version: 20131201143003) do
 
   create_table "characters", force: true do |t|
     t.string   "name"
@@ -20,6 +20,43 @@ ActiveRecord::Schema.define(version: 20131116150444) do
     t.string   "cclass"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "player_name"
+    t.integer  "max_hit_points"
+    t.integer  "surge_value"
+    t.integer  "surges_per_day"
+    t.integer  "initiative"
+    t.integer  "armor_class"
+    t.integer  "fortitude"
+    t.integer  "reflex"
+    t.integer  "will"
+    t.integer  "speed"
+    t.integer  "strength"
+    t.integer  "constitution"
+    t.integer  "dexterity"
+    t.integer  "intelligence"
+    t.integer  "wisdom"
+    t.integer  "charisma"
+    t.integer  "acrobatics"
+    t.integer  "arcana"
+    t.integer  "athletics"
+    t.integer  "bluff"
+    t.integer  "diplomacy"
+    t.integer  "dungeoneering"
+    t.integer  "endurance"
+    t.integer  "heal"
+    t.integer  "history"
+    t.integer  "insight"
+    t.integer  "intimidate"
+    t.integer  "nature"
+    t.integer  "perception"
+    t.integer  "religion"
+    t.integer  "stealth"
+    t.integer  "streetwise"
+    t.integer  "thievery"
+    t.integer  "hit_points"
+    t.integer  "remaining_surges"
+    t.integer  "action_points"
+    t.integer  "temp_hit_points"
   end
 
 end
