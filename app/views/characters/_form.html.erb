@@ -1,49 +1,126 @@
 <%= simple_form_for @character do |f| %>
-  <%= f.input :player_name %>
+  <div class="row">
+    <div class="medium-3 columns">
+      <%= f.input :player_name %>
+    </div>
+    <div class="medium-3 columns">
+      <%= f.input :name, label: 'Character name' %>
+    </div>
+    <div class="medium-2 columns">
+      <%= f.input :level, :collection => 1..30 %>
+    </div>
+    <div class="medium-2 columns">
+      <%= f.input :race %>
+    </div>
+    <div class="medium-2 columns">
+      <%= f.input :cclass, label: 'Class' %>
+    </div>
+  </div>
   <hr/>
-  <%= f.input :name, label: 'Character name' %>
-  <%= f.input :level %>
-  <%= f.input :race %>
-  <%= f.input :cclass, label: 'Class' %>
+  <div class="row">
+    <div class="medium-2 columns">
+      <%= f.input :initiative %>
+    </div>
+    <div class="medium-2 columns">
+      <%= f.input :max_hit_points, label: 'Max HP' %>
+    </div>
+    <div class="medium-2 columns">
+      <%= f.input :hit_points, label: 'HP' %>
+    </div>
+    <div class="medium-2 columns">
+      <%= f.input :temp_hit_points, label: 'Temp HP' %>
+    </div>
+    <div class="medium-2 columns">
+      <%= f.input :action_points %>
+    </div>
+    <div class="medium-2 columns">
+      <%= f.input :speed %>
+    </div>
+  </div>
   <hr/>
-  <%= f.input :max_hit_points %>
-  <%= f.input :surge_value %>
-  <%= f.input :surges_per_day %>
-  <%= f.input :initiative %>
-  <%= f.input :armor_class, label: 'AC' %>
-  <%= f.input :fortitude %>
-  <%= f.input :reflex %>
-  <%= f.input :will %>
-  <%= f.input :speed %>
-  <%= f.input :strength %>
-  <%= f.input :constitution %>
-  <%= f.input :dexterity %>
-  <%= f.input :intelligence %>
-  <%= f.input :wisdom %>
-  <%= f.input :charisma %>
+  <div class="row">
+    <div class="medium-2 columns">
+      <%= f.input :surges_per_day, label: 'Surges/day' %>
+    </div>
+    <div class="medium-2 columns">
+      <%= f.input :surge_value %>
+    </div>
+    <div class="medium-2 columns">
+      <%= f.input :remaining_surges %>
+    </div>
+    <div class="medium-6 columns">
+    </div>
+  </div>
   <hr/>
-  <%= f.input :acrobatics %>
-  <%= f.input :arcana %>
-  <%= f.input :athletics %>
-  <%= f.input :bluff %>
-  <%= f.input :diplomacy %>
-  <%= f.input :dungeoneering %>
-  <%= f.input :endurance %>
-  <%= f.input :heal %>
-  <%= f.input :history %>
-  <%= f.input :insight %>
-  <%= f.input :intimidate %>
-  <%= f.input :nature %>
-  <%= f.input :perception %>
-  <%= f.input :religion %>
-  <%= f.input :stealth %>
-  <%= f.input :streetwise %>
-  <%= f.input :thievery %>
+  <div class="row">
+    <div class="medium-1 columns" style="background-color:#ccc">
+      <%= f.input :armor_class, label: 'AC' %>
+    </div>
+    <div class="medium-1 columns" style="background-color:#ccc">
+      <%= f.input :fortitude, label: 'FORT' %>
+    </div>
+    <div class="medium-1 columns" style="background-color:#ccc">
+      <%= f.input :reflex, label: 'REF' %>
+    </div>
+    <div class="medium-1 columns" style="background-color:#ccc">
+      <%= f.input :will, label: 'WILL' %>
+    </div>
+    <div class="medium-2 columns">
+      &nbsp;
+    </div>
+    <div class="medium-1 columns">
+      <%= f.input :strength, label: 'STR' %>
+    </div>
+    <div class="medium-1 columns">
+      <%= f.input :constitution, label: 'CON' %>
+    </div>
+    <div class="medium-1 columns">
+      <%= f.input :dexterity, label: 'DEX' %>
+    </div>
+    <div class="medium-1 columns">
+      <%= f.input :intelligence, label: 'INT' %>
+    </div>
+    <div class="medium-1 columns">
+      <%= f.input :wisdom, label: 'WIS' %>
+    </div>
+    <div class="medium-1 columns">
+      <%= f.input :charisma, label: 'CHA' %>
+    </div>
+  </div>
   <hr/>
-  <%= f.input :hit_points %>
-  <%= f.input :remaining_surges %>
-  <%= f.input :action_points %>
-  <%= f.input :temp_hit_points %>
+  <div class="row">
+    <div class="medium-2 columns">
+      <%= f.input :acrobatics %>
+      <%= f.input :arcana %>
+      <%= f.input :athletics %>
+    </div>
+    <div class="medium-2 columns">
+      <%= f.input :bluff %>
+      <%= f.input :diplomacy %>
+      <%= f.input :dungeoneering %>
+    </div>
+    <div class="medium-2 columns">
+      <%= f.input :endurance %>
+      <%= f.input :heal %>
+      <%= f.input :history %>
+    </div>
+    <div class="medium-2 columns">
+      <%= f.input :insight %>
+      <%= f.input :intimidate %>
+      <%= f.input :nature %>
+    </div>
+    <div class="medium-2 columns">
+      <%= f.input :perception %>
+      <%= f.input :religion %>
+      <%= f.input :stealth %>
+    </div>
+    <div class="medium-2 columns">
+      <%= f.input :streetwise %>
+      <%= f.input :thievery %>
+    </div>
+  </div>
   <hr/>
-  <%= f.button :submit %>
+  <div class="row">
+    <%= f.button :submit %>
+  </div>
 <% end %>

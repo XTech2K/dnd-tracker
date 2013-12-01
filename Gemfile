@@ -42,6 +42,7 @@ end
 # gem 'debugger', group: [:development, :test]
 
 gem 'simple_form'
+gem 'foundation-rails'
 
 group :development do
   gem 'sqlite3'
